@@ -109,9 +109,8 @@ trait RouterTrait
             $method = $this->route['action'];
 
             if (class_exists($controller)) {
-                $newController = new $controller($this);
                 if (method_exists($controller, $method)) {
-                    $newController->$method(($this->route['data'] ?? []));
+                    $this->returnJson($controller, $method);
                     return true;
                 }
 
@@ -212,5 +211,17 @@ trait RouterTrait
     {
         $params = (!empty($params) ? "?" . http_build_query($params) : null);
         return str_replace(array_keys($arguments), array_values($arguments), $route) . "{$params}";
+    }
+    
+    
+    private function returnJson($controller, $method) {
+        $newController = new $controller($this);
+        $return = $newController->$method(($this->route['data'] ?? []));
+
+        if(!is_object($return)) {
+            $return = json_encode($return);
+        }
+
+        print $return;
     }
 }
