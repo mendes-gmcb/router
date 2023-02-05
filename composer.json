@@ -1,6 +1,6 @@
 {
   "name": "gmcb/router",
-  "description": "A classic CoffeeCode Router is easy, fast and extremely uncomplicated. Create and manage your routes in minutes!",
+  "description": "A classic Gmcb Router is easy, fast and extremely uncomplicated. Create and manage your routes in minutes!",
   "keywords": [
     "Gmcb",
     "Router",
@@ -18,14 +18,14 @@
       "name": "Gabriel M. C. de Barros",
       "email": "gmendescamargodebarros@gmail.com",
       "role": "Developer"
-    },
+    }
   ],
   "require": {
     "php": ">=8.0"
   },
   "autoload": {
     "psr-4": {
-      "CoffeeCode\\Router\\": "src"
+      "Gmcb\\Router\\": "src"
     }
   }
 }

@@ -2,7 +2,7 @@
 
 namespace Test;
 
-use CoffeeCode\Router\Router;
+use Gmcb\Router\Router;
 
 class Name
 {

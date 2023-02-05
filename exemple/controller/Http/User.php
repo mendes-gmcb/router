@@ -2,7 +2,7 @@
 
 namespace Http;
 
-use CoffeeCode\Router\Router;
+use Gmcb\Router\Router;
 
 class User
 {

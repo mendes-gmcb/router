@@ -1,10 +1,10 @@
 <?php
 
-namespace CoffeeCode\Router;
+namespace Gmcb\Router;
 
 /**
  * Trait RouterTrait
- * @package CoffeeCode\Router
+ * @package Gmcb\Router
  */
 trait RouterTrait
 {

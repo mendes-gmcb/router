@@ -1,12 +1,12 @@
-# Router @CoffeeCode
+# Router @Gmcb
 
-[![Maintainer](http://img.shields.io/badge/maintainer-@robsonvleite-blue.svg?style=flat-square)](https://twitter.com/robsonvleite)
-[![Source Code](http://img.shields.io/badge/source-coffeecode/router-blue.svg?style=flat-square)](https://github.com/robsonvleite/router)
-[![PHP from Packagist](https://img.shields.io/packagist/php-v/coffeecode/router.svg?style=flat-square)](https://packagist.org/packages/coffeecode/router)
-[![Latest Version](https://img.shields.io/github/release/robsonvleite/router.svg?style=flat-square)](https://github.com/robsonvleite/router/releases)
+[![Maintainer](http://img.shields.io/badge/maintainer-@robsonvleite-blue.svg?style=flat-square)](https://twitter.com/Gabriel27155577)
+[![Source Code](http://img.shields.io/badge/source-gmcb/router-blue.svg?style=flat-square)](https://github.com/mendes-gmcb/router)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/gmcb/router.svg?style=flat-square)](https://packagist.org/packages/gmcb/router)
+[![Latest Version](https://img.shields.io/github/release/mendes-gmcb/router.svg?style=flat-square)](https://github.com/mendes-gmcb/router/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Quality Score](https://img.shields.io/scrutinizer/g/robsonvleite/router.svg?style=flat-square)](https://scrutinizer-ci.com/g/robsonvleite/router)
-[![Total Downloads](https://img.shields.io/packagist/dt/coffeecode/router.svg?style=flat-square)](https://packagist.org/packages/coffeecode/router)
+<!-- [![Quality Score](https://img.shields.io/scrutinizer/g/robsonvleite/router.svg?style=flat-square)](https://scrutinizer-ci.com/g/robsonvleite/router) -->
+<!-- [![Total Downloads](https://img.shields.io/packagist/dt/gmcb/router.svg?style=flat-square)](https://packagist.org/packages/gmcb/router) -->
 
 ###### Small, simple and uncomplicated. The router is a PHP route components with abstraction for MVC. Prepared with RESTfull verbs (GET, POST, PUT, PATCH and DELETE), works on its own layer in isolation and can be integrated without secrets to your application.
 
@@ -35,13 +35,13 @@ equipe UpInside. Com eles você executa tarefas rotineiras com poucas linhas, es
 Router is available via Composer:
 
 ```bash
-"coffeecode/router": "2.0.*"
+"gmcb/router": "2.0.*"
 ```
 
 or run
 
 ```bash
-composer require coffeecode/router
+composer require gmcb/router
 ```
 
 ## Documentation
@@ -88,7 +88,7 @@ location / {
 ```php
 <?php
 
-use CoffeeCode\Router\Router;
+use Gmcb\Router\Router;
 
 $router = new Router("https://www.youdomain.com");
 
@@ -148,7 +148,7 @@ if ($router->error()) {
 ```php
 <?php
 
-use CoffeeCode\Router\Router;
+use Gmcb\Router\Router;
 
 $router = new Router("https://www.youdomain.com");
 
@@ -207,7 +207,7 @@ class Name
 ````php
 <?php
 
-use CoffeeCode\Router\Router;
+use Gmcb\Router\Router;
 
 $router = new Router("https://www.youdomain.com");
 
@@ -235,7 +235,7 @@ $this->router->route("name.params", [
 ```php
 <?php
 
-use CoffeeCode\Router\Router;
+use Gmcb\Router\Router;
 
 $router = new Router("https://www.youdomain.com");
 
@@ -296,7 +296,7 @@ $router->dispatch();
 ```php
 <?php
 
-use CoffeeCode\Router\Router;
+use Gmcb\Router\Router;
 
 $router = new Router("https://www.youdomain.com");
 
@@ -318,7 +318,7 @@ $router->get("/call", function ($data, Router $router){
 ```php
 <?php
 
-use CoffeeCode\Router\Router;
+use Gmcb\Router\Router;
 
 $router = new Router("https://www.youdomain.com");
 
@@ -336,7 +336,7 @@ $router->get("/redirect", "Name:redirect", "name.redirect");
 
 namespace Http;
 
-use CoffeeCode\Router\Router;
+use Gmcb\Router\Router;
 
 class User
 {
@@ -373,7 +373,7 @@ pasta de exemplo. De uma atenção para o campo _method, ele pode ser do tipo hi
     <input type="text" name="last_name" value="Leite"/>
     <input type="text" name="email" value="cursos@upinside.com.br"/>
 
-    <button>CoffeeCode</button>
+    <button>Gmcb</button>
 </form>
 ```
 
@@ -385,7 +385,7 @@ pasta de exemplo. De uma atenção para o campo _method, ele pode ser do tipo hi
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "http://localhost/coffeecode/router/example/spoofing/",
+  CURLOPT_URL => "http://localhost/gmcb/router/example/spoofing/",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,

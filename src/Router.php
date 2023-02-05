@@ -1,6 +1,6 @@
 <?php
 
-namespace CoffeeCode\Router;
+namespace Gmcb\Router;
 
 /**
  * Class CoffeeCode Router

@@ -11,9 +11,9 @@ require __DIR__ . "/Http/Guest.php";
 require __DIR__ . "/Http/User.php";
 require __DIR__ . "/Http/Group.php";
 
-use CoffeeCode\Router\Router;
+use Gmcb\Router\Router;
 
-const BASE = "https://www.localhost/coffeecode/router/exemple/controller";
+const BASE = "https://www.localhost/gmcb/router/exemple/controller";
 $router = new Router(BASE);
 
 /**
