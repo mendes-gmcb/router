@@ -35,12 +35,6 @@ equipe UpInside. Com eles você executa tarefas rotineiras com poucas linhas, es
 Router is available via Composer:
 
 ```bash
-"gmcb/router": "2.0.*"
-```
-
-or run
-
-```bash
 composer require gmcb/router
 ```
 
